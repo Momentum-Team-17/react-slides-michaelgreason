@@ -8,9 +8,10 @@ function App() {
     <div className='section'>
       <div>
         <div>
+          
       {
         <Gallery/>
-        }
+      }
         </div>
       </div>
     </div>
@@ -34,6 +35,7 @@ function Gallery() {
   return (
     <>
     <div className='all'>
+    <Sort setIndex={setIndex}/>
       <h1>
         {data.title}
       </h1>
@@ -71,6 +73,33 @@ function Gallery() {
   )
 }
 
-
+function Sort({setIndex}) {
+  function sortReleaseNewOld () {
+    setIndex(0)
+    filmData.sort(
+      (film1, film2) => {
+         return film2.release_date - film1.release_date 
+      }
+    )
+  }
+  function sortReleaseOldNew () {
+    setIndex(0)
+    filmData.sort(
+      (film1, film2) => {
+         return film1.release_date - film2.release_date 
+      }
+    )
+  }
+  return (
+    <>
+  <div>
+    <button onClick={sortReleaseNewOld}>Sort by newest to oldest</button>
+  </div>
+  <div>
+    <button onClick={sortReleaseOldNew}>Sort by oldest to newest</button>
+  </div>
+  </>
+  )
+}
 
 export default App;
