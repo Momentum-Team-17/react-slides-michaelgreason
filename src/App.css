@@ -1,4 +1,61 @@
-.below-title {
-    background-color: aqua;
+* {
+    font-family: 'Amatic SC', cursive;
+    color: teal;
+    background-color: #fffecd;
+  }
+
+h1 {
+    margin-top: 5%;
     display: flex;
+    justify-content: center;
+    font-size: 100px;
 }
+
+.below-title {
+    border: 1px solid black;
+    display: flex;
+    margin: auto;
+    width: 80%;
+    margin-top: 5%;;
+}
+
+h2 {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.rd {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-weight:bold;
+}
+
+.des {
+    display: flex;
+    margin-top: 2%;
+    font-size: 21px;
+    font-weight: 900;
+}
+.image-box {
+    width: 40%;
+}
+
+.image {
+    flex:auto;
+    width: 100%;
+}
+
+.side-card {
+    width: 60%;
+}
+
+.button-box {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+
