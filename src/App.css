@@ -54,8 +54,27 @@ h2 {
 }
 
 .button-box {
-    margin-top: 2%;
+    margin-top: .5%;
     display: flex;
     justify-content: center;
 }
 
+.ddm {
+    margin-left: 10%;
+    margin-top: 1%;
+}
+
+#slide {
+    font-size: 30px;
+}
+
+
+.goto {
+    font-size: 20px;
+    font-weight: 800;
+}
+.sorts {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10%;
+}
