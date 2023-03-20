@@ -1,6 +1,7 @@
 import './App.css';
 import  filmData  from './film-data.json';
 import { useState } from 'react';
+import BasicExample from './dropdown.js'
 
 
 function App() {
@@ -159,13 +160,14 @@ function Sort({setIndex}) {
 }
 
 function GoTo({setIndex}) {
-  function submitName() {
-    let submission = ''
+  function submitName(event) {
+    let submission = event.target.value
+    console.log(event)
     if (submission === '1') {
       return setIndex(0)}
-
-    else if (submission === '2'){
-      return setIndex(1)}
+      
+      else if (submission === '2'){
+        return setIndex(1)}
   }
   return (
   <form onSubmit={submitName}>
